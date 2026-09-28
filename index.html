@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Mark's IT, cybersecurity, and systems administration portfolio.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b1728'/%3E%3Cpath d='M14 46V18h8l10 16 10-16h8v28h-8V31L32 46 22 31v15z' fill='%23f4f1ea'/%3E%3C/svg%3E">
+<title>Mark — IT &amp; Cybersecurity Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand route" href="#home" data-view="home">Mark / Portfolio</a>
+  <nav class="nav" aria-label="Primary navigation"><a class="route active" href="#home" data-view="home">Home</a><a class="route" href="#projects" data-view="projects">Projects</a><a class="route" href="#notes" data-view="notes">Experience &amp; Notes</a></nav>
+  <div class="socials"><a class="placeholder" href="#">GitHub</a><a class="placeholder" href="#">LinkedIn</a></div>
+</header>
+<main class="shell">
+<section class="view active" id="home">
+  <div class="welcome">
+    <div><p class="kicker">IT Support · Systems Administration · Cybersecurity</p><h1>Hi, I’m Mark.</h1><p class="lead">I’m a cybersecurity student building practical experience in IT support, Windows administration, networking, and security operations. This site collects the projects, documentation, and lessons behind that work.</p><div class="welcome-actions"><a class="button route" href="#projects" data-view="projects">Browse projects</a><a class="button secondary route" href="#notes" data-view="notes">School &amp; experience</a></div></div>
+    <figure class="portrait-wrap"><div class="portrait" aria-label="Profile image placeholder">M</div><figcaption><span>Profile image</span><span>Cincinnati, Ohio</span></figcaption></figure>
+  </div>
+  <section class="home-projects"><header class="section-head"><h2>Current projects</h2><p>Each project is organized by phase, with planning, implementation, testing, documentation, and video demonstrations kept together.</p></header>
+    <!-- Featured project rows are generated from projects.js. Add and edit projects there. -->
+    <div class="project-list" id="featured-projects"></div>
+  </section>
+  <section class="personal"><div class="personal-copy"><h2>More than a project list.</h2><p>The Experience &amp; Notes section provides room for coursework, certifications, events, lab reflections, and longer posts with images—without turning this site into a copy of my résumé.</p></div><div class="personal-links"><a class="route" href="#notes" data-view="notes">School and experience</a><a class="placeholder" href="#">GitHub profile</a><a class="placeholder" href="#">LinkedIn profile</a></div></section>
+</section>
+<section class="view" id="projects">
+  <header class="page-head"><p class="kicker">Projects</p><h1>Choose an area.</h1><p>Projects are grouped by subject. Inside each project, phases keep the documentation and video demonstrations in order.</p></header>
+  <div class="category-wrap"><p>Select a category to see its projects.</p><div class="categories" role="tablist" aria-label="Project categories">
+    <button class="category" data-category="cybersecurity" role="tab" aria-selected="false"><small>01</small><strong>Cybersecurity</strong></button>
+    <button class="category" data-category="it" role="tab" aria-selected="false"><small>02</small><strong>Information Technology</strong></button>
+    <button class="category" data-category="other" role="tab" aria-selected="false"><small>03</small><strong>Other</strong></button>
+  </div><div class="category-status" id="category-status">Choose a category above to browse projects.</div></div>
+  <!--
+    PROJECTS ARE GENERATED AUTOMATICALLY.
+    Do not manually add project HTML here.
+    To add, edit, or remove a project, update the projects array in projects.js.
+    Valid categories are: cybersecurity, it, and other.
+  -->
+  <div class="library" id="project-library"></div>
+</section>
+<section class="view" id="notes">
+  <header class="page-head"><p class="kicker">Experience &amp; Notes</p><h1>What I’m learning along the way.</h1><p>A flexible place for education, certifications, events, reflections, and image-rich technical posts.</p></header>
+  <div class="notes-layout">
+    <aside class="experience"><h2>Background</h2><div class="timeline"><article><time>Expected May 2026</time><h3>B.S. in Cybersecurity</h3><p>University of Cincinnati</p></article><article><time>April 2023</time><h3>A.A.B. in Information Technology</h3><p>University of Cincinnati Blue Ash</p></article><article><time>Certification</time><h3>CompTIA ITF+</h3><p>Information technology fundamentals</p></article><article><time>Community</time><h3>Cyber@UC</h3><p>Board member and BearcatCTF contributor</p></article></div></aside>
+    <section class="journal"><h2>Field notes</h2><div class="posts">
+      <article class="post"><div class="post-image">Image / lab environment</div><div><span class="post-meta">Lab note · Active Directory</span><h3>Building a domain environment from the ground up</h3><p>The planning decisions, mistakes, and verification steps behind my Windows domain practice environment.</p><a class="placeholder" href="#">Read the post</a></div></article>
+      <article class="post"><div class="post-image">Image / event</div><div><span class="post-meta">Experience · BearcatCTF</span><h3>What creating a CTF challenge taught me</h3><p>A reflection on designing an OSINT and metadata challenge, coordinating logistics, and thinking like a participant.</p><a class="placeholder" href="#">Read the post</a></div></article>
+      <article class="post"><div class="post-image">Image / classroom</div><div><span class="post-meta">School · Cybersecurity</span><h3>Connecting coursework to practical labs</h3><p>How networking, system administration, and security concepts become clearer when they are implemented and tested.</p><a class="placeholder" href="#">Read the post</a></div></article>
+    </div></section>
+  </div>
+</section>
+</main>
+<footer><span>Mark — IT &amp; Cybersecurity Portfolio</span><span>Cincinnati, Ohio</span></footer>
+<script src="projects.js"></script>
+</body>
+</html>
+
